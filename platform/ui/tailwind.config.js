@@ -23,16 +23,8 @@ module.exports = {
       white: '#fff',
       initial: 'initial',
       inherit: 'inherit',
-
       aqua: {
         pale: '#7bb2ce',
-      },
-
-      primary: {
-        light: '#5acce6',
-        main: '#0944b3',
-        dark: '#090c29',
-        active: '#348cfd',
       },
       inputfield: {
         main: '#3a3f99',
@@ -40,12 +32,18 @@ module.exports = {
         focus: '#5acce6',
         placeholder: '#39383f',
       },
-
+      primary: {
+        light: '#5acce6',
+        main: '#0944b3',
+        dark: '#e6f7fa',
+        active: '#348cfd',
+      },
       secondary: {
         light: '#3a3f99',
-        main: '#2b166b',
-        dark: '#041c4a',
-        active: '#1f1f27',
+        main: '#d1f0f9',
+        dark: '#015e70', // main
+        active: '#00a3c4',
+        hover: '#d1f0f9', // hover option
       },
 
       indigo: {
@@ -96,13 +94,14 @@ module.exports = {
       },
 
       gray: {
+        50: '#F9FAFB',
         100: '#f7fafc',
         200: '#edf2f7',
         300: '#e2e8f0',
         400: '#cbd5e0',
         500: '#a0aec0',
         600: '#718096',
-        700: '#4a5568',
+        700: '#374151',
         800: '#2d3748',
         900: '#1a202c',
       },

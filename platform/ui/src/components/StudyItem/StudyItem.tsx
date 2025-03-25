@@ -33,7 +33,7 @@ const StudyItem = ({
   return (
     <div
       className={classnames(
-        isActive ? 'bg-secondary-dark' : 'hover:bg-secondary-main bg-black',
+        isActive ? 'bg-secondary-dark' : 'hover:bg-secondary-main bg-white',
         baseClasses
       )}
       onClick={onClick}
@@ -55,7 +55,7 @@ const StudyItem = ({
                 onClick={onSetActive}
               />
               <Icons.LaunchArrow
-                className="mx-2 w-4 text-blue-300"
+                className="mx-2 w-4 text-white"
                 onClick={onLaunchWindow}
               />
             </div>

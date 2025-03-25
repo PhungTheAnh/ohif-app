@@ -51,7 +51,7 @@ const SegmentationTable = ({
         <div className="flex">
           <span className="text-base font-bold text-white">{amount}</span>
           <Icons.EyeHidden
-            className="ml-2 w-6 cursor-pointer text-white transition duration-300 hover:opacity-80"
+            className="ml-2 w-6 cursor-pointer text-black transition duration-300 hover:opacity-80"
             onClick={() => handleToggleAll()}
           />
         </div>

@@ -434,7 +434,7 @@ function WorkList({
                       disabled={!isValidMode}
                       startIconTooltip={
                         !isValidMode ? (
-                          <div className="font-inter flex w-[206px] whitespace-normal text-left text-xs font-normal text-white">
+                          <div className="font-inter flex w-[206px] whitespace-normal text-left text-xs font-normal text-black">
                             {invalidModeDescription}
                           </div>
                         ) : null
@@ -539,7 +539,7 @@ function WorkList({
   );
 
   return (
-    <div className="flex h-screen flex-col bg-black">
+    <div className="flex h-screen flex-col bg-gray-100">
       <Header
         isSticky
         menuOptions={menuOptions}

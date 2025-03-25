@@ -145,7 +145,7 @@ const SegmentationConfig = ({
         >
           <Icons.ByName
             name="panel-group-open-close"
-            className={classNames('h-5 w-5 cursor-pointer text-white transition duration-300', {
+            className={classNames('h-5 w-5 cursor-pointer text-black transition duration-300', {
               'rotate-90 transform': !isMinimized,
             })}
           />

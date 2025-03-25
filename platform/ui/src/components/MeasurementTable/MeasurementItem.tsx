@@ -81,7 +81,7 @@ const MeasurementItem = ({
         ))}
         <Icons.Pencil
           className={classnames(
-            'absolute w-3 cursor-pointer text-white transition duration-300 hover:opacity-80',
+            'absolute w-3 cursor-pointer text-black transition duration-300 hover:opacity-80',
             { 'invisible mr-2 opacity-0': !isActive && !isHovering },
             { 'opacity-1 visible': !isActive && isHovering }
           )}

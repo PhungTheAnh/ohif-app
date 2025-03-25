@@ -34,11 +34,11 @@ const StudyListTableRow = props => {
               <tbody>
                 <tr
                   className={classnames(
-                    'hover:bg-secondary-main cursor-pointer transition duration-300',
+                    'cursor-pointer transition duration-300',
                     {
-                      'bg-primary-dark': !isExpanded,
+                      'bg-primary-dark hover:bg-secondary-hover text-black': !isExpanded,
                     },
-                    { 'bg-secondary-dark': isExpanded }
+                    { 'bg-secondary-active hover:bg-secondary-active text-white': isExpanded }
                   )}
                   onClick={onClickRow}
                   data-cy={clickableCY}

@@ -22,7 +22,7 @@ const Magnifier = (props: IconProps) => (
         cx="53.419"
         cy="53.419"
         r="53.419"
-        fill="#06081D"
+        fill="white"
       />
       <circle
         cx="49.411"
