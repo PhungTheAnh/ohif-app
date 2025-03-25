@@ -434,21 +434,23 @@ function WorkList({
                       disabled={!isValidMode}
                       startIconTooltip={
                         !isValidMode ? (
-                          <div className="font-inter flex w-[206px] whitespace-normal text-left text-xs font-normal text-black">
+                          <div className="font-inter flex w-[206px] whitespace-normal text-left text-xs font-normal">
                             {invalidModeDescription}
                           </div>
                         ) : null
                       }
                       startIcon={
                         isValidMode ? (
-                          <Icons.LaunchArrow className="!h-[20px] !w-[20px] text-black" />
+                          <Icons.LaunchArrow className="!h-[20px] !w-[20px] text-[#015e70]" />
                         ) : (
-                          <Icons.LaunchInfo className="!h-[20px] !w-[20px] text-black" />
+                          <Icons.LaunchInfo className="!h-[20px] !w-[20px] text-[#015e70]" />
                         )
                       }
                       onClick={() => {}}
                       dataCY={`mode-${mode.routeName}-${studyInstanceUid}`}
-                      className={isValidMode ? 'text-[13px]' : 'bg-[#222d44] text-[13px]'}
+                      className={
+                        isValidMode ? 'text-[13px]' : 'bg-white text-[13px] text-gray-600'
+                      }
                     >
                       {mode.displayName}
                     </Button>
