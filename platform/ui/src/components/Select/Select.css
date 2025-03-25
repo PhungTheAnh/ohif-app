@@ -1,5 +1,5 @@
 .customSelect__wrapper .customSelect__control {
-  @apply border-secondary-light w-full rounded border bg-white text-sm leading-tight text-black shadow transition duration-300;
+  @apply w-full rounded border border-[#b3e6f2] bg-white text-sm leading-tight text-black shadow transition duration-300;
   min-height: 28px;
 }
 .customSelect__wrapper .customSelect__control:hover {
@@ -90,22 +90,22 @@
 }
 
 .customSelect__menu-portal .customSelect__menu-list::-webkit-scrollbar-thumb {
-  background-color: #0944b3;
+  background-color: #b3e6f2;
   border-radius: 10px;
 }
 
 .customSelect__option--is-focused {
-  background-color: #0944b391 !important;
+  background-color: #b3e6f2 !important;
 }
 
 .customSelect__menu-portal .customSelect__option:hover {
-  background-color: #0944b391;
+  background-color: #b3e6f2;
 }
 
 .customSelect__menu-portal .customSelect__menu {
-  border: 2px solid #0944b3;
+  border: 2px solid #0197b2;
   border-radius: 6px;
-  background-color: #151515 !important;
+  background-color: #f0fbfd !important;
 }
 
 .css-1hwfws3 {

@@ -49,7 +49,7 @@ const enabledClasses = {
   ),
 };
 
-const disabledClasses = 'bg-inputfield-placeholder text-common-light cursor-default';
+const disabledClasses = 'bg-white text-common-light cursor-default';
 
 const defaults = {
   color: 'default',

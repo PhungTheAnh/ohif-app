@@ -70,7 +70,7 @@ module.exports = {
           foreground: 'hsl(var(--accent-foreground))',
         },
         popover: {
-          DEFAULT: 'hsl(var(--popover))',
+          DEFAULT: 'rgb(248, 249, 255)',
           foreground: 'hsl(var(--popover-foreground))',
         },
         card: {

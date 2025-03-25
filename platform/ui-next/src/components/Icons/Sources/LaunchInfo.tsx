@@ -14,7 +14,7 @@ export const LaunchInfo = (props: IconProps) => (
         cx="10.5"
         cy="11"
         r="10.192"
-        fill="#000000"
+        fill="#015e70"
       />
       <path
         fill="#fff"

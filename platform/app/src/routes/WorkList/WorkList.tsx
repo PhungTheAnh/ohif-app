@@ -343,7 +343,7 @@ function WorkList({
             <>
               <Icons.GroupLayers
                 className={classnames('mr-2 inline-flex w-4', {
-                  'text-primary-active': isExpanded,
+                  'text-white': isExpanded,
                   'text-secondary-light': !isExpanded,
                 })}
               />
@@ -449,7 +449,9 @@ function WorkList({
                       onClick={() => {}}
                       dataCY={`mode-${mode.routeName}-${studyInstanceUid}`}
                       className={
-                        isValidMode ? 'text-[13px]' : 'bg-white text-[13px] text-gray-600'
+                        isValidMode
+                          ? 'text-[13px]'
+                          : 'text-[13px] text-gray-600 hover:bg-[#f0fbfd] hover:text-[#015e70] rounded-lg'
                       }
                     >
                       {mode.displayName}
