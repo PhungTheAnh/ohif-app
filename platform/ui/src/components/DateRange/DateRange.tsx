@@ -161,7 +161,6 @@ const DateRange = props => {
       numberOfMonths={1}
       showClearDates={false}
       anchorDirection="left"
-      className="p-3"
     />
   );
 };
