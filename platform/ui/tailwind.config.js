@@ -46,10 +46,6 @@ module.exports = {
         hover: '#d1f0f9', // hover option
       },
 
-      indigo: {
-        dark: '#0b1a42',
-      },
-
       common: {
         bright: '#e1e1e1',
         light: '#a19fad',

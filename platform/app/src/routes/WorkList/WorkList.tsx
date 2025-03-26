@@ -40,6 +40,7 @@ import {
 import { Types } from '@ohif/ui';
 
 import { preserveQueryParameters, preserveQueryStrings } from '../../utils/preserveQueryParameters';
+import Menu from 'platform/ui-next/src/components/Header/Menu.js';
 
 const PatientInfoVisibility = Types.PatientInfoVisibility;
 
@@ -451,7 +452,7 @@ function WorkList({
                       className={
                         isValidMode
                           ? 'text-[13px]'
-                          : 'text-[13px] text-gray-600 hover:bg-[#f0fbfd] hover:text-[#015e70] rounded-lg'
+                          : 'rounded-lg text-[13px] text-gray-600 hover:bg-[#f0fbfd] hover:text-[#015e70]'
                       }
                     >
                       {mode.displayName}

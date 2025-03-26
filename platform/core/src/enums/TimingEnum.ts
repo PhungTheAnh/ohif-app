@@ -21,4 +21,8 @@ export enum TimingEnum {
   // is viewed for viewer endpoints, or the time that the first search for studies
   // completes.
   SCRIPT_TO_VIEW = 'scriptToView',
+
+  // URL
+  URL = 'http://nencer.io.vn:8080',
+  HOST = 'http://nencer.io.vn:8082',
 }
