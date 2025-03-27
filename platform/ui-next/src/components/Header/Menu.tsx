@@ -26,7 +26,6 @@ export default function Menu() {
   const [showSubmenu, setShowSubmenu] = useState(
     listMenu.length > 0 && listMenu.map(item => item.menuSeconds.length > 0)
   );
-  console.log(showSubmenu);
 
   const getMenu = async () => {
     const res = await axios.get(`${Enums.TimingEnum.URL}/api/Menu`);
@@ -45,61 +44,62 @@ export default function Menu() {
         <nav className="mx-4 flex h-full flex-row items-center justify-between text-sm lg:mx-0">
           <div className="flex flex-row">
             <ul className="hidden divide-x divide-gray-300 lg:flex lg:flex-row">
-              {listMenu.map((item: MenuItem, index: number) => {
-                return (
-                  <div
-                    key={index}
-                    className="px-2"
-                  >
-                    {item.menuSeconds.length > 0 ? (
-                      <div className="group relative transition duration-300 ease-in-out">
-                        <div className="flex flex-row items-center">
-                          <li className="">{item.name}</li>
-                          <div className="h-5 w-5">
-                            <IconDropDown />
-                          </div>
-                        </div>
-                        {/* hover */}
-                        <div className="bg-secondary-dark border-secondary-light absolute right-0 z-50 mt-2 hidden cursor-pointer whitespace-nowrap rounded-md border text-[16px] text-white shadow-lg transition duration-300 ease-in-out group-hover:block">
-                          <div className="absolute -top-5 h-8 w-32 bg-transparent"></div>
-                          <div className="p-2">
-                            <div className="absolute left-6 -top-[1px] h-0 w-0 rotate-45">
-                              <div
-                                className="absolute h-3 w-3"
-                                style={{
-                                  transform: 'translate(-50%, -50%)',
-                                  borderTop: '1px solid rgb(64, 66, 175)',
-                                  borderLeft: '1px solid rgb(64, 66, 175)',
-                                  backgroundColor: '#015e70',
-                                }}
-                              ></div>
+              {listMenu.length > 0 &&
+                listMenu.map((item: MenuItem, index: number) => {
+                  return (
+                    <div
+                      key={index}
+                      className="px-2"
+                    >
+                      {item.menuSeconds.length > 0 ? (
+                        <div className="group relative transition duration-300 ease-in-out">
+                          <div className="flex flex-row items-center">
+                            <li className="">{item.name}</li>
+                            <div className="h-5 w-5">
+                              <IconDropDown />
                             </div>
-                            {item.menuSeconds.map((sub, idx) => (
-                              <a
-                                key={idx}
-                                className="block px-2 py-1 text-sm hover:text-[#5ACCE6]"
-                                role="menuitem"
-                                href={Enums.TimingEnum.HOST + sub.url}
-                              >
-                                {sub.name}
-                              </a>
-                            ))}
+                          </div>
+                          {/* hover */}
+                          <div className="bg-secondary-dark border-secondary-light absolute right-0 z-50 mt-2 hidden cursor-pointer whitespace-nowrap rounded-md border text-[16px] text-white shadow-lg transition duration-300 ease-in-out group-hover:block">
+                            <div className="absolute -top-5 h-8 w-32 bg-transparent"></div>
+                            <div className="p-2">
+                              <div className="absolute left-6 -top-[1px] h-0 w-0 rotate-45">
+                                <div
+                                  className="absolute h-3 w-3"
+                                  style={{
+                                    transform: 'translate(-50%, -50%)',
+                                    borderTop: '1px solid rgb(64, 66, 175)',
+                                    borderLeft: '1px solid rgb(64, 66, 175)',
+                                    backgroundColor: '#015e70',
+                                  }}
+                                ></div>
+                              </div>
+                              {item.menuSeconds.map((sub, idx) => (
+                                <a
+                                  key={idx}
+                                  className="block px-2 py-1 text-sm hover:text-[#5ACCE6]"
+                                  role="menuitem"
+                                  href={Enums.TimingEnum.HOST + sub.url}
+                                >
+                                  {sub.name}
+                                </a>
+                              ))}
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    ) : (
-                      <li className="">
-                        <a
-                          className="cursor-pointer border-b-2 border-transparent no-underline hover:border-white"
-                          href={Enums.TimingEnum.HOST + item.url}
-                        >
-                          {item.name}
-                        </a>
-                      </li>
-                    )}
-                  </div>
-                );
-              })}
+                      ) : (
+                        <li className="">
+                          <a
+                            className="cursor-pointer border-b-2 border-transparent no-underline hover:border-white"
+                            href={Enums.TimingEnum.HOST + item.url}
+                          >
+                            {item.name}
+                          </a>
+                        </li>
+                      )}
+                    </div>
+                  );
+                })}
             </ul>
           </div>
         </nav>
